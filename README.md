@@ -16,3 +16,6 @@ You will also see any lint errors in the console.
 
 ## HW task
 
+з апі https://dummyjson.com/docs/products отримати та вивести всі елементи зі всіма полями.
+структура компонентів наступна -
+App - Products - Product[]

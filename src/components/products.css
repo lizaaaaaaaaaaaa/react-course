@@ -1,0 +1,27 @@
+.products {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product {
+    padding: 15px;
+    border: 1px double crimson;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.image {
+    width: 150px;
+    height: auto;
+}
+
+.review {
+    padding: 10px;
+    border: 1px double crimson;
+    margin-top: 10px;
+}
