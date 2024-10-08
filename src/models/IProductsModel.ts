@@ -1,4 +1,6 @@
-export interface IProductsModels {
+import {IReviewsModel} from "./IReviewsModel";
+
+export interface IProductsModel {
     id: number,
     title: string,
     description: string,
@@ -30,12 +32,4 @@ export interface IProductsModels {
     }
     images: string[],
     thumbnail: string
-}
-
-export interface IReviewsModel {
-    rating: number,
-    comment: string,
-    date: string,
-    reviewerName: string,
-    reviewerEmail: string,
 }

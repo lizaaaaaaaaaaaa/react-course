@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {IReviewsModel} from "../models/IProductsModels";
+import {IReviewsModel} from "../models/IReviewsModel";
 
 const Review: FC<IReviewsModel> = ({rating, comment, date, reviewerName, reviewerEmail}) => {
     return (

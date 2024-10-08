@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
-import {IProductsModels} from "../models/IProductsModels";
+import {IProductsModel} from "../models/IProductsModel";
 import Review from "./Review";
 import "./products.css"
 
-const Product: FC<IProductsModels> = (props) => {
+const Product: FC<IProductsModel> = (props) => {
     return (
         <li className={"product"}>
             <div><i>id:</i> {props.id}</div>

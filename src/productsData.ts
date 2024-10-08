@@ -1,6 +1,6 @@
-import {IProductsModels} from "./models/IProductsModels";
+import {IProductsModel} from "./models/IProductsModel";
 
-export const productsData:IProductsModels[] = JSON.parse(JSON.stringify([
+export const productsData:IProductsModel[] = JSON.parse(JSON.stringify([
     {
         "id": 1,
         "title": "Essence Mascara Lash Princess",

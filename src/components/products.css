@@ -9,6 +9,14 @@
     margin-bottom: 20px;
 }
 
+.product > div {
+    padding-bottom: 5px;
+}
+
+.product > div > i {
+    text-transform: capitalize;
+}
+
 .images {
     display: flex;
     align-items: center;
