@@ -1,0 +1,13 @@
+.list {
+    margin-top: 25px;
+}
+
+.posts {
+    display: flex;
+    gap: 0 15px;
+
+}
+
+.posts > p {
+    color: cornflowerblue;
+}

@@ -1,0 +1,7 @@
+.btn {
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    background-color: transparent;
+    margin-left: 15px;
+    cursor: pointer;
+}
