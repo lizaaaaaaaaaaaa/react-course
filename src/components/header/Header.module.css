@@ -1,0 +1,22 @@
+header {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #272727;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

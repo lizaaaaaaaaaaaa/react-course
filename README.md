@@ -15,4 +15,8 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## HW task
-
+Створити сторінки та роути на них
+users
+posts
+comments
+При переході на кожну з них отримувати відповідні відповіді від джейсонплейсхолдеру та виводити всі об'єкти

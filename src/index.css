@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 25px;
+  color: #272727;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  color: crimson;
+  border: 1px solid crimson;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: .4s;
+}
