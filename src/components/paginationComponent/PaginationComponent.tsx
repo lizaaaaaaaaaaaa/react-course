@@ -9,11 +9,11 @@ type IPropsType = {
 const PaginationComponent: FC<IPropsType> = ({prevBtnDisable, nextBtnDisable}) => {
     const [query, setQuery] = useSearchParams({page: "1"})
 
-    const prevRecipesPage = () => {
+    const prevRecipesPage = (): void => {
         let currentPage: number = +((query.get("page")) || "1");
         setQuery({page: (--currentPage).toString()});
     }
-    const nextRecipesPage = () => {
+    const nextRecipesPage = (): void => {
         let currentPage: number = +((query.get("page")) || "1");
         setQuery({page: (++currentPage).toString()});
     }

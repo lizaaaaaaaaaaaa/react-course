@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const ErrorLayout = () => {
+const ErrorLayout:FC = () => {
     return (
         <h1>
             Oops! You are on the wrong page!

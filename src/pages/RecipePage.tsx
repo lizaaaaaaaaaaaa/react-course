@@ -10,7 +10,7 @@ const RecipePage: FC = () => {
     const {state} = useAppLocation<IRecipe>()
     const [recipe, setRecipe] = useState<IRecipe | null>(null)
 
-    useEffect(() => {
+    useEffect((): void => {
         if (state) {
             setRecipe(state)
         } else if (id) {
@@ -21,7 +21,7 @@ const RecipePage: FC = () => {
     return (
         <>
             <h1>{recipe?.name}</h1>
-            {recipe && <RecipeDetails recipe={recipe} />}
+            {recipe && <RecipeDetails recipe={recipe}/>}
         </>
     );
 };

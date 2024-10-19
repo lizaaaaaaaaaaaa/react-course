@@ -11,7 +11,7 @@ const RecipesPage: FC = () => {
     const [isPrevBtnDisable, setIsPrevBtnDisable] = useState<boolean>(true);
     const [isNextBtnDisable, setIsNextBtnDisable] = useState<boolean>(true);
 
-    useEffect(() => {
+    useEffect((): void => {
         const currentPage: number = +(query.get("page") || "1");
         getAllRecipes(currentPage).then(data => {
             setRecipes(data.recipes);
