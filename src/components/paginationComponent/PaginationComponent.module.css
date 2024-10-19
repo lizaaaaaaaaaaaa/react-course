@@ -1,0 +1,26 @@
+.btns {
+    display: flex;
+    gap: 0 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.btns button {
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btns button:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.btns button:disabled {
+    opacity: 0.6;
+}
