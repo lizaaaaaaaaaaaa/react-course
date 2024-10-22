@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {FC} from 'react';
 import './App.css';
+import FormComponent from "./components/FormComponent";
 
 function App() {
     return (
-        <div className="App"></div>
+        <div className="App">
+            <FormComponent/>
+        </div>
     );
 }
 
