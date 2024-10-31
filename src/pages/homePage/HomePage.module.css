@@ -1,0 +1,23 @@
+.title {
+    font-size: 48px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.link {
+    font-size: inherit;
+    padding: 12px 16px;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+.link:hover {
+    transform: scale(1.05);
+    transition: .4s;
+}

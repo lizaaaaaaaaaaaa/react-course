@@ -1,0 +1,17 @@
+.header {}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 0 20px;
+}
+
+.nav__link {
+    text-transform: capitalize;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
