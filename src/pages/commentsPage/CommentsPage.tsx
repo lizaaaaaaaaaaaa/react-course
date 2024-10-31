@@ -1,10 +1,10 @@
-import React, {FC, useContext} from 'react';
-import MainContext from "../../context/MainContextProvider";
+import React, {FC} from 'react';
+import useZustandStore from "../../stores/store";
 import CommentItem from "../../components/commentItem/CommentItem";
 import styles from "../Page.module.css"
 
 const CommentsPage: FC = () => {
-    const {commentsSlice} = useContext(MainContext)
+    const {commentsSlice} = useZustandStore();
 
     return (
         <ul className={styles.list}>
