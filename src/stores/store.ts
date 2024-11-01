@@ -39,18 +39,6 @@ const useZustandStore = create<IZustandManager>()(set => {
                 }))
             }
         },
-        postsWithCommentsSlice: {
-            postsWithComments: [],
-            setPostsWithComments: (items) => {
-                return set(state => ({
-                    ...state,
-                    postsWithCommentsSlice: {
-                        ...state.postsWithCommentsSlice,
-                        postsWithComments: items
-                    }
-                }))
-            }
-        }
     }
 });
 

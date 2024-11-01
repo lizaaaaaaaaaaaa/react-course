@@ -15,10 +15,6 @@ export default interface IZustandManager {
     commentsSlice: {
         comments: IComment[],
         setComments: (comments: IComment[]) => void;
-    },
-    postsWithCommentsSlice: {
-        postsWithComments: IPostWithComments[],
-        setPostsWithComments: (items:IPostWithComments[]) => void;
     }
 }
 

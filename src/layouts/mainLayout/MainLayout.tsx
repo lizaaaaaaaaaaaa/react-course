@@ -10,24 +10,15 @@ import useZustandStore from "../../stores/store";
 
 const MainLayout: FC = () => {
 
-    const {usersSlice, postsSlice, commentsSlice, postsWithCommentsSlice} = useZustandStore()
+    const {usersSlice, postsSlice, commentsSlice} = useZustandStore()
 
     useEffect(() => {
         getData<IUser[]>(endpoints.users).then(values => usersSlice.setUsers(values));
         getData<IPost[]>(endpoints.posts).then(values => postsSlice.setPosts(values));
         getData<IComment[]>(endpoints.comments).then(values => {
-            commentsSlice.setComments(values);
-            postsWithCommentsSlice.setPostsWithComments(
-                postsSlice.posts.map(post => {
-                    return {
-                        ...post,
-                        comments:
-                            values.filter(value => value.postId === post.id)
-                    }
-                })
-            )
-
+            commentsSlice.setComments(values)
         });
+
     }, []);
 
     return (

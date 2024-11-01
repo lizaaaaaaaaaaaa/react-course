@@ -8,7 +8,7 @@ const HeaderComponent: FC = () => {
             <nav>
                 <ul className={styles.nav__list}>
                     <li>
-                        <Link to={"home"} className={styles.nav__link}>home</Link></li>
+                        <Link to={"/"} className={styles.nav__link}>home</Link></li>
                     <li>
                         <Link to={"users"} className={styles.nav__link}>users</Link></li>
                     <li>

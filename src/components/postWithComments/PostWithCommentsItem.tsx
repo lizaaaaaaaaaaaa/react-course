@@ -8,10 +8,10 @@ const PostWithCommentsItem: FC<IPostWithComments> = ({id, comments, userId, titl
         <li className={styles.item}>
             <h2>{title}</h2>
             <p>{body}</p>
-            <div className={styles.item__comments}>
-                {comments.map(comment => <CommentItem postId={comment.postId} id={comment.id} name={comment.name}
+            <ul className={styles.item__comments}>
+                {comments.map(comment => <CommentItem key={comment.id}  postId={comment.postId} id={comment.id} name={comment.name}
                                                       email={comment.email} body={comment.body}/>)}
-            </div>
+            </ul>
         </li>
     );
 };
